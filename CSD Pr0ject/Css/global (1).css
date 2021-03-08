@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 25%;
+}
+
+body {
+    font-family: Poppins;
+}
+
+/******************************************************************
+            NAVBAR CSS
+***********************************************************************/
+
+/* SETS THE BACKGROUND IMAGE PROJECT FIORA*/
+header {
+    width: 100%;
+    height: 75vh;
+    background: url(../images/image_1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/*THE LOGO SECTION WILL BE SET BY THIS CLASS*/
+#logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Georgia;
+}
+
+/*KEEPS THE NAVIGATION BAR AT TOP FIXED AT ITS POSITION*/
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/*NAVBAR ELEMENTS TEXT-COLOR AND BACKGROUND COLOR AND OTHER ATTRIBUTES ARE MANAGED HERE*/
+nav ul {
+    list-style: none;
+    background: black;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width:580px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/************************************************
+                BODY CSS
+*************************************************/
+.row-header {
+    margin-top: 2em;
+}
+
+
+#game-modes {
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:active,
+a:visited,
+a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*********************************************
+        FOOTER CSS
+*********************************************/
+footer {
+    color: ghostwhite;
+    background-color: #1F1525;
+    padding: 2% 0%;
+}
+
+footer ul li {
+    line-height: 3em;
+    list-style: none;
+}
+
+
+
+/*************************************************
+            LOGIN PAGE
+***************************************************/
+button {
+    cursor: pointer;
+}
